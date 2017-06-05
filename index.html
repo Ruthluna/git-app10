@@ -1,0 +1,638 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Guia Turistica</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine3/style.css" />
+<script type="text/javascript" src="engine3/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head> 
+<body onLoad="MM_preloadImages('imagenes/a.jpg','imagenes/magos.jpg','imagenes/s.jpg','imagenes/buena.jpg')">
+
+
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Atlixco Pueblo Mágico</h1>
+</div>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-fisrt-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Atlixco</h2>
+<p>Muestra información sobre el Municipio</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Villa Iluminada</h2>
+<p>Muestra información sobre el evento.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Gastronomía</h2>
+<p>Se muestra Gastronomía de Atlixco.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tradiciones</h2>
+<p>Estas son algunas tradiciones del Municipio</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Leyendas</h2>
+<p>A continuación se muestran algunas leyendas de la Región</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Jardín Mágico</h2>
+<p>Se muestra el nuevo atractivo Turistico</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>X-TREMO PARQUE</h2>
+<p>Parque de Diversiones</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Diseñadora</h2>
+<p>Datos del Diseñador</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/logo.png" width="56" height="46">
+</div>
+<div>
+<h4> Guía Turistíca </h4>
+<h4>Ruth Luna Salazar</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Atlixco</h1>
+
+</div>
+<div data-role="content" align="left">
+<div>
+<p>Heroica Atlixco, también conocido como «Atlixco de las flores», es un municipio que se localiza al suroeste de la Ciudad de Puebla. Recibió su título de «Heroica»9 debido a la Batalla del 4 de mayo de 1862 que precedería a la Batalla de Puebla del 5 de mayo de 1862.
+
+Es conocido por su buen clima y la gran actividad florística, comercial y turística que le valieron haber sido llamada Atlixco de las Flores y Granero de la Nueva España, durante la época colonial.
+
+El último domingo de septiembre, en la explanada del cerro de San Miguel, Atlixco se convierte en la sede de un festival en el que se reúnen los representantes de las once regiones culturales del estado de Puebla, festival que es llamado «Huey Atlixcáyotl» o Fiesta Grande de Atlixco y que es patrimonio cultural del estado de Puebla.
+Se ubica a 30 km de la ciudad de Puebla, capital del Estado y cuenta con dos importantes vías de acceso: la Carretera Federal 190 y la Autopista Vía Atlixcáyotl.
+
+Actualmente, es una moderna ciudad con más de cien mil habitantes, que ha logrado armonizar su desarrollo urbano con el majestuoso legado de arquitectura colonial que dejaron sus fundadores (1579), y que hoy es uno de los principales atractivos turísticos de este municipio.
+
+Recibió su título de «Heroica» debido a la Batalla del 4 de mayo de 1862 que precedería a la Batalla de Puebla del 5 de mayo de 1862. Es conocido por su buen clima y la gran actividad florística, comercial y turística que le valieron haber sido llamada Atlixco de las Flores y Granero de la Nueva España, durante la época colonial.</p>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Cerro de San Miguel</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','imagenes/atlixco.jpg',1)"><img src="imagenes/atlixco-01.jpg" name="Image29" width="284" height="189" id="Image29"></a> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Atlixco</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/a.jpg',1)"><img src="imagenes/atlix.jpg" name="Image13" width="188" height="125" id="Image13"></a> </div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4> Guía Turistíca </h4>
+<h4>Ruth Luna Salazar</h4>
+</div>
+</div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container3">
+<div class="ws_images"><ul>
+		<li><img src="data3/images/atl.png" alt="atl" title="atl" id="wows3_0"/></li>
+		<li><img src="data3/images/atlixco.jpg" alt="atlixco" title="atlixco" id="wows3_1"/></li>
+		<li><img src="data3/images/atlixco01.jpg" alt="atlixco-01" title="atlixco-01" id="wows3_2"/></li>
+		<li><img src="data3/images/c.jpg" alt="c" title="c" id="wows3_3"/></li>
+		<li><img src="data3/images/l.jpg" alt="L" title="L" id="wows3_4"/></li>
+		<li><a href="http://wowslider.com"><img src="data3/images/uj.jpg" alt="bootstrap slider" title="uj" id="wows3_5"/></a></li>
+		<li><img src="data3/images/xtkarts.jpg" alt="xtkarts" title="xtkarts" id="wows3_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="atl"><span><img src="data3/tooltips/atl.png" alt="atl"/>1</span></a>
+		<a href="#" title="atlixco"><span><img src="data3/tooltips/atlixco.jpg" alt="atlixco"/>2</span></a>
+		<a href="#" title="atlixco-01"><span><img src="data3/tooltips/atlixco01.jpg" alt="atlixco-01"/>3</span></a>
+		<a href="#" title="c"><span><img src="data3/tooltips/c.jpg" alt="c"/>4</span></a>
+		<a href="#" title="L"><span><img src="data3/tooltips/l.jpg" alt="L"/>5</span></a>
+		<a href="#" title="uj"><span><img src="data3/tooltips/uj.jpg" alt="uj"/>6</span></a>
+		<a href="#" title="xtkarts"><span><img src="data3/tooltips/xtkarts.jpg" alt="xtkarts"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine3/wowslider.js"></script>
+<script type="text/javascript" src="engine3/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>	
+</div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Villa Ilumuinada </h1>
+</div>
+<div data-role="content" align="left">
+<div>
+ <p>La iluminación que cubre la arquitectura del zócalo de la ciudad se distingue desde lejos a partir de las seis de la tarde. Llegando al inicio del recorrido se pueden ver luces por todas partes, entre 1790 figuras iluminadas, arcos, espacios para tomar fotografías “de recuerdo” y todos los edificios decorados con luminarias que llenan las paredes con diversos temas navideños.</p>
+ <p>En las calles las zonas están separadas por temas, musicales (con guitarras, conciertos de rock y figuras tradicionales como los organilleros), piñatas y faroles, un viaje astral (con una calle con luces que simulan un pasillo de estrellas), venta de artesanías, feria con juegos mecánicos y juegos tradicionales de destreza como dardos y pesca de patos.</p>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/villa.jpg" width="216" height="128"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Luces</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/ilum.jpg',1)"><img src="imagenes/Vill.jpg" name="Image12" width="293" height="198" id="Image12"></a> </div>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4> Guía Turistíca </h4>
+<h4>Ruth Luna Salazar</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Gastronomía</h1>
+    </div>
+    <div data-role="content" align="left">
+      <div>
+      <p><h2>Platillos Típicos</h2></p>
+<p>CECINA: Un platillo por el que después de probarlo querrás volver Atlixco, la tradicional cecina de Atlixco, elaborado por cecineros del municipio de manera artesanal este platillo es básico dentro de la cocina atlixquense, acompañado de sus guarniciones de queso, aguacate y nopales.</p>
+<p>Taco Placero: Mejores no encontraras en Atlixco rellenos de cualquier guisado simple, combinado o no con una dosis de arroz a la mexicana; los hay de chicharrón prensado, tinga, huevos duros, nopales con huevo, longaniza con papas, chicharrón guisado en salsa verde o roja, bistec con nopales, costilla de puerco en adobo, entre otros.</p>
+ <p>Enchiladas: Los rollitos que se forman uno tras otro para cubrirse de una delicada salsa. Rellenas de pollo, bañadas en salsa verde, roja o mole que se acompañan de lechuga, aguacate, crema, queso, rábano y cebolla, listos para degustarse calientitos y bien bañaditos.</p>
+ <p>Barbacoa: El estilo de carne con un sabor inigualable que te hará chupar los dedos.
+La carne de borrego hecha en barbacoa es uno de los estilos de popularidad en el centro del país. Elaborada dentro de la tierra con hojas de maguey alcanza su mejor punto en sabor; lo puedes preparar en taco o simplemente con una rica salsa y aguacate. No olvides el consomé que se produce al cocinar la barbacoa.</p>
+<p><h2> PIPIANES, MOLES Y ADOBOS.</h2></p>
+<p>Mole Poblano: El platillo por excelencia en fiestas coloniales que muestra la creatividad de las familias poblanas, delicioso mole dulce representativo de Puebla, está hecho a base de varios chiles y condimentos, agregando una caricia de chocolate. Su consistencia espesa se acompaña comúnmente de una pieza de guajolote o pollo y se agrada a la vista decorándolo con ajonjolí tostado.</p>
+ <p>Mole de Olla: Suculento caldo hecho a base de carne de res, sazonado en salsa de jitomate con chile costeño y perfumado con ramas de cilantro. Este platillo se acompaña de ejotes y calabacitas para servirse caliente en un plato al que se le agrega como toque final el jugo de limón al gusto.</p>
+<p>Mole de Panza: Este caldoso plato hecho con panza se puede encontrar en negocios de antojitos mexicanos o fondas de nuestra bella ciudad.</p>
+<p>Mole Verde o Pipián Verde: Se elabora con hierbas y hojas verdes, se hace con pepitas y otras semillas molidas, chile poblano o cuaresmeño. En esta receta se utiliza tanto la pepita (semilla de calabaza) como las hojas verdes y el resultado es un guiso que sorprende por su complejidad, aunque hay otra variedad de Mole Verde el caldoso hecho con salsa verde, acompañado de calabacitas, ejotes, habas verdes y carne de res, pollo o puerco.</p>
+ <p>El Pipián Rojo
+Se elabora se hace con pepitas y otras semillas molidas, como ajonjolí, semillas de calabaza, jitomates y chiles secos rojos, logrando un sabor exquisito al paladar.</p>
+<p>Adobo: Elaborado con especias, chiles anchos, guajillo, ajos, hoja de aguacate este platillo deleita a los más exigentes paladares y es considerado dentro de la gastronomía mexicana uno de los platillos que no puede faltar para probar.</p>
+ <p>Chiles en nogada: Platillo de temporada que envuelve parte de la historia y triunfo de nuestro México.
+Representativo del estado de Puebla, tiene su origen en los tiempos de Independencia en homenaje a Agustín de Iturbide. Los colores de la bandera se aprecian con armonía y perfección en este manjar por los meses de julio y agosto, ya que sus ingredientes que utilizan para el relleno se producen solo en esta temporada.</p>
+<p><h2>ANTOJITOS.</h2></p>
+En ningún lugar pueden faltar estos deliciosos antojitos.
+<p>Cemitas: Un crujiente y dorado pan redondo con ajonjolí en decoración es la cubierta de ingredientes comunes como el quesillo, pápalo, chipotle, cebolla, aguacate, aceite de olivo y según el gusto milanesa, “carnitas”, pata, jamón o carne enchilada que en conjunto dan origen al suculento plato de la región similar a la torta.
+<p>Chalupas: Las chalupas son tortillas fritas cubiertas de salsa, cebolla y carne de res/puerco/pollo deshebrada con salsa roja o verde, una verdadera delicia.
+ <p>Pambazos: Te gusta el pan, pues este es un pan completamente liso parecido a la telera (bollo) rellena de chorizo o longaniza y posteriormente bañada en salsa de chile guajillo o ancho, listo para satisfacer tu paladar.</p>
+<p>Molotes: Son una derivación de las gorditas, quesadillas o empanadas cerradas. Los molotes son hechos a mano con masa de maíz que según el gusto se puede rellenar con papa, sesos, queso, requesón o tinga, para después freírse y disfrutar de su crujiente sabor y en Atlixco son toda una tradición.</p>
+ <p>Tostadas: Este es un antojito que se aprecia por su fácil preparación y gran satisfacción en su sabor, siendo una sencilla tortilla frita se perfecciona añadiendo frijoles, lechuga, queso, crema, salsa y complementando su mismo nombre, un ingrediente electo por su degustador, el cual puede ser pollo, lengua, pata o quesillo.</p>
+<p>Tamales: De Comino tradicional de la región de Atlixco, elaborado con maíz, jitomate y guajillo para la salsa, manteca y cominos el cual le da ese sabor muy especial.
+De canario, Estos tamales se preparan con harina de arroz, mantequilla, azúcar y yemas de huevo. Es una receta diferente a la de los tamales tradicionales.</p>
+<p>Atole de Cacahuate: El gusto por el atole recibe una recompensa con este de cacahuate, que aporta algo diferente. Ideal para comer unos tamales, e incluso un pan de agua, hojaldra o cuernitos. Claro es para una reunión familiar o fiesta, elaborado con masa, leche y cacahuate
+<p>Esquites y Elotes: Muy populares en todo el país la palabra esquites son los granos del elote hervidos en agua con sal, epazote y otras hierbas de olor, servidos en un vaso, se toman calientes y con cuchara, y normalmente se les agrega jugo de limón, chile, y sal. Se le puede agregar mayonesa o crema y queso canasta rallado.
+ De una olla enorme de agua muy caliente y valiéndose de grandes tenazas extrae una pieza de maíz cocido a la perfección, la sacude para quitarle el exceso de agua y le inserta un palito de madera para poderla agarrar. Después prepara el elote al gusto del cliente con mayonesa, queso rallado, sal, limón, chile en polvo.</p>
+<p><h2>POSTRES.</h2></p>
+<p>Jeripa: Postre tradicional y originario de Atlixco, está elaborado con harina de arroz, leche, yemas de huevo y piñón, donde el resultado es una crema de arroz que es adornada con ajonjolí y pasas, se elabora para la fiesta de Corpus y Semana Santa.
+Este postre se regala junto con la cazuela de barro, y es curioso que cuando vas a una casa y llevas algún guisado dices “la cazuela no es de jeripa” para indicar que te vas a llevar de regreso ésta.</p>
+<p>Dulce de Calabaza y Tejocote; y Camote: Este postre, común en otoño y frecuentemente parte de la celebración de Día de Muertos, se hace en México con la calabaza de cáscara dura y pulpa de color café claro, de igual forma el dulce de Tejocote que se hierve con canela y piloncillo hasta obtener ese espesor que lo hacen un ícono de la tradición casera.</p></div>
+       </div>
+       <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Antecedentes</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div><img src="imagenes/cecina.jpg" name="Image" width="50%" height="50%" id="Image"></div>
+</div>
+</div>
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+   <li class="ui-first-child ui-last-child">
+    <a href="http://mipaisatlixco.blogspot.mx/2010/04/gastronomia.html" target="_self" id="beep" data-role="button">
+      <h2> Más </h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="https://www.tripadvisor.com.mx/Restaurants-g1941253-Atlixco_Central_Mexico_and_Gulf_Coast.html" target="_self" id="vibrar" data-role="button">
+         <h2>Restaurantes</h2>
+         </a>
+        </li>
+      </ul>
+    </div>
+</div> 
+    </p>
+    </p>
+    </p>    
+    </p>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/cecina.jpg" alt="cecina" title="cecina" id="wows2_0"/></li>
+		<li><img src="data2/images/chile.jpg" alt="chile" title="chile" id="wows2_1"/></li>
+		<li><img src="data2/images/comida.jpg" alt="comida" title="comida" id="wows2_2"/></li>
+		<li><img src="data2/images/consome.jpg" alt="CONSOME" title="CONSOME" id="wows2_3"/></li>
+		<li><img src="data2/images/en.jpg" alt="en" title="en" id="wows2_4"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/esquites.jpg" alt="wowslider" title="esquites" id="wows2_5"/></a></li>
+		<li><img src="data2/images/tamales.jpg" alt="tamales" title="tamales" id="wows2_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="cecina"><span><img src="data2/tooltips/cecina.jpg" alt="cecina"/>1</span></a>
+		<a href="#" title="chile"><span><img src="data2/tooltips/chile.jpg" alt="chile"/>2</span></a>
+		<a href="#" title="comida"><span><img src="data2/tooltips/comida.jpg" alt="comida"/>3</span></a>
+		<a href="#" title="CONSOME"><span><img src="data2/tooltips/consome.jpg" alt="CONSOME"/>4</span></a>
+		<a href="#" title="en"><span><img src="data2/tooltips/en.jpg" alt="en"/>5</span></a>
+		<a href="#" title="esquites"><span><img src="data2/tooltips/esquites.jpg" alt="esquites"/>6</span></a>
+		<a href="#" title="tamales"><span><img src="data2/tooltips/tamales.jpg" alt="tamales"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slideshow</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</p>
+</p>
+</p>
+</p>
+</p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4> Guía Turística </h4>
+<h4>Ruth Luna Salazar</h4>
+</div>
+</div>
+    </p></p></p></p></p></p></p></div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Tradiciones</h1>
+    </div>
+    <div data-role="content" align="left">
+      <div>
+        <p>Fiesta de Reyes.</p>
+         <p>Semana Santa.</p>
+          <p>Expo Flores y Plantas.</p>
+           <p> Feria de la Cecina</p>
+            <p>Atlixcayotontli</p>
+             <p>Fiestas Patrias</p>
+              <p>Huey Atlixcáyotl</p>
+              <p> Desfile de Calaveras</p>
+              <p>Feria de la Nochebuena</p>
+              <p>Villa Iluminada</p>
+              
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Fiesta de Reyes</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image44','','imagenes/magos.jpg',1)"><img src="imagenes/reyes.jpg" width="430" height="274" id="Image44"></a></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Desfile de calaveras</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image43','','imagenes/s.jpg',1)"><img src="imagenes/deesfile.jpg" width="360" height="240" id="Image43"></a></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Feria de noche buena</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image45','','imagenes/buena.jpg',1)"><img src="imagenes/noche.jpg" width="416" height="275" id="Image45"></a></div>
+</div>
+</div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4> Guía Turística </h4>
+<h4>Ruth Luna Salazar</h4>
+</div>
+</div>
+        </div>
+        </div>
+        </div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Leyendas </h1>
+    </div>
+<div data-role="content" align="left">
+      <div>
+        <center><p><h2>El charro negro</h2></p></center>
+
+<p>Cuenta la leyenda, un tal señor Demetrio, presidente de la Asociación de Charros de Metepec en la década de los cincuenta, manejaba fuertes cantidades de dinero y eso fue conocido hasta el día de su muerte, ocasionada por dos balazos en la frente. Días antes comentó con los familiares la intención de guardas las riquezas. Y nadie sabe en dónde quedó todo.
+Sin embargo, desde aquellos años y hasta la fecha, muchos vecinos de Metepec aseguran haberlo visto vestido con un traje de charro negro, montando un caballo del mismo color y bajando a todo galope por las lomas del cerro de Axocopan. Incluso, aseguran observarlo por las noches en la clínica de Metepec en busca de almas moribundas y de dinero.</p>
+</div>
+ <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Charro Negro</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/CharroNegro.jpg" name="Image2" width="104" height="106" id="Image2"> </div>
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>DIABLITO DEL CERRO DE SAN MIGUEL</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/hidalgo.jpg" width="240" height="199"></div>
+</div>
+</div>
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+   <li class="ui-first-child ui-last-child">
+    <a href="https://leyendadeterror.com/leyenda-del-charro-negro/" target="_self" id="beep" data-role="button">
+      <h2> Leyenda </h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="http://atlixcos.blogspot.mx/2007/01/el-diablito-del-cerro-de-san-miguel.html" target="_self" id="vibrar" data-role="button">
+         <h2>Otras </h2>
+         </a>
+        </li>
+      </ul>
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4> Guía Turística </h4>
+<h4>Ruth Luna Salazar</h4>
+</div>
+</div>
+    </div>
+</div> </div>
+
+</div>
+</div>
+</p>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Jardín Mágico </h1>
+    </div>
+    
+<div data-role="content" align="left">
+      <div>
+        <p>El parque tiene 2 hectáreas, y estará abierto todos los días de las 10:00 a las 18:00 horas,  y de las 19:00 a las 23:00 horas, con un costo de entrada de 40 pesos para adultos, 30 para niños, y de 50 pesos para adulto y 35 para niños en horario nocturno.
+
+El proyecto busca que familias enteras pasen un buen rato rodeados de naturaleza con sus seres queridos, es por ello que además del parque temático podrán encontrar un restaurante, venta de helados, cafetería y una tienda de jardinería.
+
+En este lugar podrán encontrar una guía de cómo elaborar su propio jardín a un estilo de primer mundo, podrán adquirir las plantas y se les mostrará la forma de cuidado de las plantas.
+
+Los visitantes conocerán un árbol que ha sobrevivido al paso de los siglos, el árbol que vivió en la época de los dinosaurios.</p>
+</div>
+ <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Jardín</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/tur.jpg" name="Image2" width="360" height="240" id="Image2"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Colibrí</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/colibri.jpg" width="324" height="324"></div>
+</div>
+</div>
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+   <li class="ui-first-child ui-last-child">
+    <a href="https://www.youtube.com/watch?v=rIwtU2Zqg5M" target="_self" id="beep" data-role="button">
+      <h2>Video </h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="imagenes/angelydulce.jpg" target="_self" id="vibrar" data-role="button">
+         <h2>Foto </h2>
+         </a>
+        </li>
+      <<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4> Guía Turística </h4>
+<h4>Ruth Luna Salazar</h4>
+</div>
+</div>
+    </div>
+</div> 
+</div>
+</div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>X-TREMO PARQUE </h1>
+    </div>
+<div data-role="content" align="left">
+      <div>
+        <p>Somos el parque de diversiones más innovador de México, contamos con las mejores atracciones extremas reunidas en un mismo lugar. Nuestra misión es que vivas la mejor experiencia de tu vida, de la manera más segura y divertida. Nos encontramos en la ciudad de Atlixco (Estado de Puebla), a solo 30 minutos de Puebla capital</p>
+
+</div>
+ <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Sky</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/sky.jpg" width="375" height="282" id="Image2"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Paracaídas</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/sky1.jpg" width="311" height="207"></div>
+</div>
+</div>
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+   <li class="ui-first-child ui-last-child">
+    <a href="http://www.xtremo.mx/" target="_self" id="beep" data-role="button">
+      <h2>Más </h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="https://www.youtube.com/watch?v=FRcnhKJNsMU" target="_self" id="vibrar" data-role="button">
+         <h2>Vídeo </h2>
+         </a>
+        </li>
+      </ul>
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4> Guía Turística </h4>
+<h4>Ruth Luna Salazar</h4>
+</div>
+</div>
+    </div>
+    </div>
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+  </div>
+    </div>
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</p>
+</p>
+</p>
+</p>
+</p>
+</p>
+</p>
+</p>
+</p>
+</p>
+</p>
+</p>
+</p>
+</p>
+</p>
+</p>
+</p>
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Diseñadora </h1>
+    </div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Diseñador</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/ruth.jpg" name="Image2" width="288" height="360" id="Image2"> </div>
+</div>
+</div>
+
+<div data-role="content" align="center">
+      <div>
+      <p><h2>Escuela: CBTis N°16</p></h2>
+
+        <p><h2>Ruth Luna salazar</p></h2>
+        <p><h2>Especialidad: Programación</p></h2>
+        
+
+</div>
+ 
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Guía Turística</h4>
+        <h4>Ruth Luna Salazar</h4>
+      </div>
+     </div>
+     
+     
+     
+     
+</body>
+</html>
